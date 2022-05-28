@@ -1,6 +1,12 @@
 
-        /*
-        Console.WriteLine ("Ingresa el valor entero de A:");
+          
+using System; || Ejercicio 5
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+                Console.WriteLine ("Ingresa el valor entero de A:");
         int a =  Convert.ToInt32(Console.ReadLine());
         Console.WriteLine ("Ingresa el valor entero de B:");
         int b =  Convert.ToInt32(Console.ReadLine());
@@ -40,13 +46,7 @@
         } else{
             Console.WriteLine ("El valor de A es menor al valor de B");
         }
-          
-using System; || Ejercicio 5
 
-public class HelloWorld
-{
-    public static void Main(string[] args)
-    {
         Console.WriteLine ("Cantidad de horas trabajadas:");
         int hts = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine ("Valor en $(pesos argentinos) por hora trabajada:");
@@ -62,6 +62,6 @@ public class HelloWorld
         Console.WriteLine ("Usted percibira $"+SAL+" por sus horas brindadas");
     }
 }
-        */
+
 
 
