@@ -1,0 +1,86 @@
+sEjercicio 2
+Datos de Entrada: NUM1 y NUM2
+Datos de Salida: Resultado de la comparacion, lo nombramos RDO.
+
+Proceso: 
+1er Paso) Ingresar un valor para NUM1 
+2do paso) Ingresar un valor para NUM2 
+2do Paso) Asignar a RDO la comparación de NUM1; NUM2. 
+3er Paso) Mostrar el valor de RDO.
+4to Paso) Finalizar. 
+
+Ejercicio 3
+Datos de Entrada: 3 números enteros, los nombramos NUM1, NUM2, NUM3. 
+Datos de Salida: Resultado de la comparación entre los valores NUM1, NUM2, NUM3 ; lo nombramos RDO. 
+Caso de prueba 1: 
+Datos de Entrada: NUM1= 6; NUM2= 9 
+Datos de Salida: RDO1 =  15
+Caso de prueba 2: 
+Datos de Entrada: NUM2= 9 ; NUM3= 15
+Datos de Salida: RDO2 = 24
+Caso de prueba 3: 
+Datos de Entrada: NUM1= 6 ; NUM3= 15  
+Datos de Salida: RDO3 = 21
+Proceso: 
+1er Paso) Ingresar un valor para NUM1 
+2do paso) Ingresar un valor para NUM2 
+3er Paso) Ingresar un valor para NUM3	
+4to Paso) Asignar a RDO1 el resultado de la suma NUM1 + NUM2.
+5to Paso  Asignar a RDO2 el resultado de la suma NUM2 + NUM3.
+6to Paso  Asignar a RDO3 el resultado de la suma NUM1 + NUM3.
+7to Paso) Mostrar el valor de RDO. 
+8to Paso) Comparar RDO1, RDO2, RDO3 con NUM1, NUM2 , NUM3 mostrar "iguales" sino "distintas".
+9tp Paso) Fin.
+
+Ejercicio 4:Calcular la cantidad de horas, minutos y segundos que existen en una cantidad de 
+segundos ingresada por el usuario.
+
+Datos de Entrada: Números naturales, lo nombramos SEG1 
+Datos de Salida: Resultado de la comparacion, lo nombramos RDO
+
+Caso de prueba 1: 
+Datos de Entrada: SEG1= 3728
+Datos de Salida: RDO = 1 hora 2 min 8 seg
+
+Proceso:
+1er paso - Ingresar un valor para SEG1;
+2do paso - Comparar SEG1 >= 3600 dividir en 3600, mostrar valor RDO1 + "hora", asignar SEG1 = RES1;
+3to paso - Comparar SEG1 >= 60 dividir en 60, mostrar valor RDO2 + "min", asignar SEG1 = RES2;
+4to paso - Comparar SEG1 < 60, mostrar RDO3 + "seg";
+5to paso - Fin.
+
+SEG1 = 3728
+3728 / 3600 > RDO1 = 1, RES1 = 128 
+mostrando  1 hora
+SEG1 = 128
+128 / 60 > RDO2 = 2, RES2 = 8
+mostrando 1 hora 2 min
+SEG1 = 8 
+RDO3 = 8
+mostrando 1 hora 2 min 8 seg
+
+Ejercicio 5: Se desea calcular el salario neto semanal de un trabajador dado el número de 
+horas trabajadas y el precio que se paga por hora: 
+• Las primeras 35 horas se pagan a precio normal. 
+• Las horas que pasen de 35 se pagan a 1.5 veces la tarifa normal. 
+
+Datos de entrada: Numeros naturales, lo nombramos HTS
+Datos de salida: Resultado de la comparacion, lo nombramos SAL
+
+Proceso:
+1er paso - Ingresar un valor para HTS;
+2do paso - Ingresar un valor para PPH;
+3er paso - Comparar HTS > 35 dividir en 35, RES multiplicar (PPH*1,5) = PROD, (35*PPH) + PROD = SAL;
+4to paso - Comparar HTS <= 35, HTS*PPH = SAL;
+5to paso - Mostrar "$" + valor SAL;
+5to paso - Fin.
+
+Caso de prueba:
+1er paso - HTS = 45;
+2do paso - PPH = 4;
+3er paso - Compara HTS > 35 = si;
+4to paso - Entonces RES = 10, PROD = 10*(4*1,5), PROD = 60, SAL = 60 + (35*4), SAL = 200, mostrar $200.
+
+
+
+
