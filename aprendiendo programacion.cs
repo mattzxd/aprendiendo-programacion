@@ -61,7 +61,7 @@ public class HelloWorld
         Console.WriteLine ("Usted percibira $"+SAL+" por sus horas brindadas");
     }
 }
-*/
+
 
 
 using System; 
@@ -98,4 +98,39 @@ public class HelloWorld
     }
 }
 
+using System; 
+
+public class HelloWorld
+{
+    static int locr = 550;
+       static int emp = 600;
+       static int hum = 150;
+       static int serv = 50;
+       static string strServ = "Valor del Servicio: $"+serv;
+
+    public static void Main(string[] args)
+    {
+      Console.WriteLine ("Cuantos platos de locro consumio la mesa: ");
+      int cantL = Convert.ToInt32(Console.ReadLine());
+      int precL = locr * cantL;
+
+      Console.WriteLine ("Cuantas docenas de empanadas consumio la mesa:");
+        int cantE = Convert.ToInt32(Console.ReadLine());
+        int precE = emp * cantE;
+    
+    Console.WriteLine ("Cuantas humitas consumio la mesa:");
+        int cantH = Convert.ToInt32(Console.ReadLine());
+        int precH = hum * cantH;
+    
+    Console.WriteLine (strServ);
+
+    int total = precL + precE + precH + serv;
+
+    Console.WriteLine ("Valor total de la cuenta es: $"+total);
+    double prop = total * 0.10;
+    Console.WriteLine ("Propina sugerida: $"+prop);
+
+    }
+}
+*/
 
