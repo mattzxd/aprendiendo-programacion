@@ -1,5 +1,4 @@
-
-          
+/*          
 using System; || Ejercicio 5
 
 public class HelloWorld
@@ -62,6 +61,41 @@ public class HelloWorld
         Console.WriteLine ("Usted percibira $"+SAL+" por sus horas brindadas");
     }
 }
+*/
 
+
+using System; 
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       Console.WriteLine("Ingrese el numero de dos digitos que quiere invertir su valor:");
+       int num = Convert.ToInt32(Console.ReadLine());
+       int div = num / 10;
+       int mod = num % 10;
+
+       Console.WriteLine("Su valor invertido es:"+mod+div);
+       
+    }
+}
+
+using System; 
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       Console.WriteLine("Ingrese el numero de tres digitos que quiere invertir su valor:");
+       int num = Convert.ToInt32(Console.ReadLine());
+       int div = num / 100;
+       int mod = num % 100;
+       int div10 = mod / 10;
+       int mod10 = mod %10;
+       
+       Console.WriteLine("Su valor invertido es:"+mod10+div10+div);
+       
+    }
+}
 
 
