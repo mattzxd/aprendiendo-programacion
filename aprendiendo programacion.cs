@@ -217,14 +217,13 @@ public class HelloWorld
 */
 
    
- using System; 
-
+using System; 
 public class HelloWorld
 
 {
     public static void Main(string[] args)
     {   
-    System.Console.WriteLine("Numeros multiplos de 2 y 5");
+    Console.WriteLine("Numeros multiplos de 2 y 5");
     Console.WriteLine("Cantidad de valores a ingresar: ");
     int cantidad = Convert.ToInt32(Console.ReadLine());
     int multiploDeDos = 0;
@@ -233,24 +232,11 @@ public class HelloWorld
         {          
         Console.WriteLine("Ingrese los valores:");
         int multiplo = Convert.ToInt32(Console.ReadLine());
-        for (int x = 0; x<1; x++){
-            int mob2 = multiplo % 2;
-            int mob5 = multiplo % 5;
-            if (mob2 == 0){
-                multiploDeDos += 1;
-            } else {
-                if (mob5 == 0) {
-                multiploDeCinco += 1;
-                }
-            }
-            }
+        int mob2 = multiplo % 2;
+        int mob5 = multiplo % 5;
+            if (mob2 == 0) multiploDeDos += 1;
+            if (mob5 == 0) multiploDeCinco += 1;
         }
     System.Console.WriteLine("Hay " +multiploDeDos+" multiplos de 2 y "+multiploDeCinco+" multiplosde 5.");
-        } 
-    
+     }
 }
-
-       
-
-
-  
