@@ -132,5 +132,125 @@ public class HelloWorld
 
     }
 }
+
+using System; 
+
+public class HelloWorld
+
+{
+    public static void Main(string[] args)
+    {
+    Console.WriteLine("Ingrese un valor para a: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+    if (a!=0){
+    Console.WriteLine("Ingerese un valor para b:");
+        double b = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Ingrese un valor para c: ");
+        double c = Convert.ToDouble(Console.ReadLine());
+        double Discriminante1 = (System.Math.Pow(b,2)-(4*a*c));
+    if (Discriminante1 >= 0){
+        double x1 = ((-b) + System.Math.Sqrt(Discriminante1))/(2*a);
+        double x2 = ((-b) - System.Math.Sqrt(Discriminante1))/(2*a);
+    Console.WriteLine("El reseultado de X1= "+x1+"y X2= "+x2);
+    }
+    else {
+    Console.WriteLine("No existen raices. Pelotudo.");
+    }
+  
+    } else {
+    Console.WriteLine("Vos sos tonto o te apellidas Mocchi?");
+    }
+    }
+
+ using System; 
+
+public class HelloWorld
+
+{
+    public static void Main(string[] args)
+    {
+        int i = 0;
+        // for (inicio ; condicion ; paso)
+        for (i; i<10 ;i++){
+            System.Console.WriteLine(i);
+        }
+
+
+
+    }
+}
+
+
+ using System; 
+
+public class HelloWorld
+
+{
+    public static void Main(string[] args)
+    {
+        System.Console.WriteLine("Ingrese el angulo A: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+
+        System.Console.WriteLine("Ingrese el angulo B: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        System.Console.WriteLine("Ingrese el angulo C: ");
+        double c = Convert.ToDouble(Console.ReadLine());
+
+    if (a+b+c == 180){
+        if (a>90 || b>90 || c>90) {
+            System.Console.WriteLine("El triangulo es un obtusangulo.");
+        } else {
+            if (a==90 || b==90 || c==90) {
+                System.Console.WriteLine("El triangulo es un rectangulo.");
+            } else {
+                System.Console.WriteLine("El triangulo es un acutangulo.");
+            }
+        } 
+
+    } else {
+        System.Console.WriteLine("No es un triangulo, gil.");
+    }
+
+    }
+}
 */
 
+   
+ using System; 
+
+public class HelloWorld
+
+{
+    public static void Main(string[] args)
+    {   
+    System.Console.WriteLine("Numeros multiplos de 2 y 5");
+    Console.WriteLine("Cantidad de valores a ingresar: ");
+    int cantidad = Convert.ToInt32(Console.ReadLine());
+    int multiploDeDos = 0;
+    int multiploDeCinco = 0;
+    for (int i = 0; i<cantidad; i++)
+        {          
+        Console.WriteLine("Ingrese los valores:");
+        int multiplo = Convert.ToInt32(Console.ReadLine());
+        for (int x = 0; x<1; x++){
+            int mob2 = multiplo % 2;
+            int mob5 = multiplo % 5;
+            if (mob2 == 0){
+                multiploDeDos += 1;
+            } else {
+                if (mob5 == 0) {
+                multiploDeCinco += 1;
+                }
+            }
+            }
+        }
+    System.Console.WriteLine("Hay " +multiploDeDos+" multiplos de 2 y "+multiploDeCinco+" multiplosde 5.");
+        } 
+    
+}
+
+       
+
+
+  
